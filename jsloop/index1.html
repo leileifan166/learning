@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let num1 = 1;
+        do{
+            document.write('こんにちは');
+            num1++
+        }while(num1 <= 0);
+
+        let a = 1;
+        while (a <= 100){
+            document.write(`あなたは今年${a}歳ですね`);
+            a++;
+            document.write('<br>');
+        }
+
+        let sum = 0;
+        let b = 1;
+        while(b <= 100){
+            sum = sum + b;
+            b++;
+        }
+        document.write(sum);
+
+        let c = prompt('愛しているか');
+        if(c === '愛している'){
+            alert('私も愛します');
+        }else{
+            while(c != '愛している'){
+             c = prompt('愛しているか');
+            }
+        }
+
+        while(c !== '愛している'){
+            c = prompt('愛しているか');
+        }
+
+    </script>
+    
+</body>
+</html>

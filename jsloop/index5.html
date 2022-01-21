@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var newarr =[];
+        var arr =[2,0,6,1,77,0,52,0,25,7];
+        for(i=0; i < arr.length; i++){
+            if(arr[i] !== 0){
+                newarr[newarr.length] = arr[i]; 
+            }
+        }
+        console.log(newarr);
+
+        var arr1 = ['red','green','blue','pink','purple'];
+        var newarr1 = [];
+        for(i=arr1.length-1; i >= 0; i--){
+            newarr1[newarr1.length] = arr1[i];
+        }
+        console.log(arr1);
+        console.log(newarr1);
+
+
+        var arr2 = [5,4,3,2,1];
+        var temp;
+        for(i = 0; i < arr2.length; i++){
+            for(j = 0; j < arr2.length; j++){
+                if(arr2[j] > arr2[j + 1]){
+                    temp = arr2[j + 1];
+                    arr2[j + 1] = arr2[j];
+                    arr2[j] = temp;
+                }
+            }
+        }
+        console.log(arr2);
+
+
+        //求1～100的累加和
+        /* var sum = 0;
+        for(var i = 1; i <= 100; i++){
+            sum = sum + i;
+        }
+        console.log(sum); */
+
+        //求10～50的累加和
+        /* var sum = 0;
+        for(var i = 10; i <= 50; i++){
+            sum = sum + i;
+        }
+        console.log(sum); */
+
+        //求20到80的累加和
+        
+        function getSum(num1,num2){
+            var sum = 0;
+            for(var i = num1; i <= num2; i++){
+                sum = sum + i;
+            }
+            console.log(sum);
+        }
+        getSum(1,100);
+        getSum(10,50);
+        getSum(1,1000);
+        
+       
+        
+        
+
+
+
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
